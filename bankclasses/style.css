@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body,
+  div {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  button {
+    width: 30vw;
+    height: 3vw;
+    font-size: 110%;
+  }
+  
+  div {
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  #acdiv {
+    display: flex;
+  }
+  
+  #show {
+    display: none;
+  }
+
+  p{
+    color: blue;
+    text-decoration: underline black;
+    cursor: pointer;
+  }
+
+  #baldiv{
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cbal{
+    width: fit-content;
+  }

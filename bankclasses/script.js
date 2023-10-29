@@ -111,11 +111,14 @@ function disblock(){
   
   }
 
-  withdraw.onclick = ()=>{
+ withdraw.onclick = ()=>{
+    // console.log(gagan.balance);
     let x =Number(amount.value)
-      gagan.balance>x ? ()=>{gagan.balance-=x;valueset();}: alert("insufficient balance");
+    // console.log(x);
+     if( gagan.balance >= x) {gagan.balance-=x;valueset();}else{ alert("insufficient balance");}
     
   }
+
 
 
 const valueset = ()=>{

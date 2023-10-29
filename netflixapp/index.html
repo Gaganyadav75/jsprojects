@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myflixs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <main>
+
+<header>
+    <h1>MyFlix</h1>
+    <span id="navhome">Home</span>
+    <span id="navtvshows">Tv_Shows</span>
+    <span id="navmovie">Movies</span>
+    <span id="navmylist">My_List</span>
+    <span id="navsearch">🔍</span>
+</header>
+
+
+    <div class="featured">
+        <h2 id="moviename"></h2>
+        <p id="moviedesc"></p>
+        <div id="featuredbtndiv">
+            <button>
+                <lord-icon
+                src="https://cdn.lordicon.com/aklfruoc.json"
+                trigger="loop-on-hover"
+                style="width:30%;height:100%">
+            </lord-icon><span>Play</span></button>
+            <button id="addlistbtn">List</button><br>
+        </div>
+     
+        
+    </div>
+
+<div id="maindiv" class="showdivs">
+    <h2>Wishlist</h2>
+    <div class="moviesdiv" id="wishlist"></div>
+    <h2>Trending</h2>
+    <div class="moviesdiv" id="trending"></div>
+    <h2>Top Rated</h2>
+    <div class="moviesdiv" id="toprated" ></div>
+</div>
+
+<div id="tvshowsdiv" class="showdivs">
+    <h2>Tv Shows</h2>
+    <div id="tvshows"></div>
+</div>
+<div id="moviesmaindiv" class="showdivs">
+    <h2>Movies</h2>
+    <div id="moviesshowdiv"></div>
+</div>
+<div id="mylistmaindiv" class="showdivs">
+    <h2>My List</h2>
+    <div id="mylistshowdiv"></div>
+</div>
+
+</main>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+</body>
+</html>

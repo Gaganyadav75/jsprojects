@@ -113,7 +113,7 @@ function disblock(){
 
   withdraw.onclick = ()=>{
     let x =Number(amount.value)
-      gagan.balance>x ? ()=>{gagan.withdraw(x);valueset();}: alert("insufficient balance");
+      gagan.balance>x ? ()=>{gagan.balance-=x;valueset();}: alert("insufficient balance");
     
   }
 

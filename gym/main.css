@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  display: grid;
+  grid-auto-rows: 0.7fr 0.5fr 0.4fr 0.45fr;
+  height: 320vh;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 5;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  width: 100vw;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "img img";
+  text-align: center;
+}
+
+@keyframes slide1 {
+  0% {
+    height: 11.2vh;
+  }
+  100% {
+    height: 7.5vh;
+  }
+}
+@keyframes slide2 {
+  0% {
+    height: 7.5vh;
+  }
+  100% {
+    height: 11.2vh;
+  }
+}
+nav img {
+  grid-area: img;
+  height: 11.2vh;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: 1vw;
+  padding: 0.5%;
+}
+
+nav a {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+nav a:hover {
+  color: rgb(10, 148, 235);
+  -webkit-text-decoration: underline white 1px;
+          text-decoration: underline white 1px;
+}
+
+#homesection {
+  background-image: url(https://i.imgur.com/h3x1ZSc.jpg);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+#homesection div {
+  width: 40vw;
+  height: 40vh;
+  font-size: 2.5vw;
+  margin-left: 10vw;
+}
+
+.bn39 {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 20%;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 0;
+  margin-top: 2vh;
+}
+
+.bn39:hover {
+  color: #fff;
+}
+
+.bn39 .bn39span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn39:hover .bn39span {
+  background: transparent;
+}
+
+#homesection #membership {
+  width: 80vw;
+  height: 70vh;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  margin: auto;
+  display: none;
+}
+#homesection #membership div {
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "divh2";
+  font-size: 1vw;
+  margin: 1vh 1vw;
+  text-align: center;
+  height: 95%;
+  filter: grayscale(0.5);
+  padding-bottom: 5%;
+}
+#homesection #membership div h1 {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(163, 255, 3);
+}
+#homesection #membership div h2 {
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 2vw;
+  grid-area: divh2;
+  padding-top: 3%;
+  font-size: 1.5vw;
+}
+#homesection #membership div h3 {
+  background: rgba(0, 0, 0, 0.3);
+}
+#homesection #membership #free {
+  border-right: 2px solid black;
+  background-image: url(https://i.imgur.com/CLWdtFu.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+#homesection #membership #monthly {
+  border-right: 2px solid black;
+  background-image: url(https://i.imgur.com/uT3o5Vv.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+#homesection #membership #yearly {
+  background-image: url(https://i.imgur.com/wuOGvLk.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+#homesection #membership span {
+  background-color: green;
+  width: 3%;
+  height: 8%;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+#offersection {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#h2offlip {
+  margin-top: 3vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#offerdiv1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 23vh;
+  background-color: white;
+}
+
+#offerdiv1 h2 {
+  width: 100vw;
+  text-align: center;
+  font-size: 2vw;
+}
+
+#offerdiv1 p {
+  margin-top: 1vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#mainflipbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+}
+
+.flipdiv {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin: 2vw;
+  width: 20vw;
+  height: 15vw;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flipdiv img {
+  height: 15vw;
+  width: 20vw;
+}
+
+.flipdiv p {
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+
+.imgdiv h2 {
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.flipdiv:hover .innerflipdiv {
+  transform: rotateY(180deg);
+}
+
+.innerflipdiv {
+  background-color: white;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.imgdiv, .backdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Safari */
+  backface-visibility: hidden;
+}
+
+.backdiv {
+  transform: rotateY(180deg);
+}
+
+#aboutsection {
+  width: 100vw;
+  height: 55vh;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1.2fr 1.5fr;
+  grid-template-areas: "h2 h2" "path path" "motive members";
+}
+#aboutsection h2 {
+  margin-bottom: 2vh;
+  grid-area: h2;
+  text-align: center;
+  font-size: 2vw;
+  width: 100vw;
+  padding-right: 3vw;
+}
+
+.insideabout {
+  width: 50;
+}
+.insideabout h3 {
+  text-align: left;
+  margin-top: 2vh;
+  font-size: 1.6vw;
+  margin-left: 2vw;
+}
+.insideabout p {
+  width: 48vw;
+  font-size: 1.3vw;
+  margin-left: 2vw;
+}
+
+#aboutdiv1 {
+  grid-area: path;
+  width: 100vwvw;
+  text-align: center;
+  margin: auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+#aboutdiv1 h3 {
+  font-size: 1.6vw;
+}
+#aboutdiv1 p {
+  font-size: 1.4vw;
+  width: 70vw;
+}
+
+#aboutdiv2 {
+  grid-area: motive;
+}
+#aboutdiv2 p {
+  padding-right: 4%;
+  font-size: 1.4vw;
+  border-right: 1px solid black;
+}
+
+#aboutdiv3 {
+  grid-area: members;
+}
+
+#contactfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.4fr 0.4fr 0.2fr;
+  grid-template-areas: "frm addressdiv" "join join " "soc soc";
+  width: 100vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#contactfooter form {
+  grid-area: frm;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactfooter form h2 {
+  width: 100%;
+  text-align: center;
+}
+#contactfooter form input, #contactfooter form select {
+  height: 3.5vh;
+  width: 70%;
+  margin: auto;
+}
+#contactfooter form textarea {
+  width: 70%;
+  resize: none;
+  margin-bottom: 2vh;
+}
+#contactfooter form button {
+  width: 20%;
+  height: 3.5vh;
+}
+#contactfooter #addressdiv {
+  grid-area: addressdiv;
+  margin-top: 5%;
+  margin: auto;
+}
+#contactfooter #addressdiv img {
+  height: 25vh;
+}
+#contactfooter #join {
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+#contactfooter #join p {
+  width: 80vw;
+  text-align: center;
+}
+#contactfooter #sociallink {
+  grid-area: soc;
+  margin: 2vw 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contactfooter #sociallink a img {
+  height: 3vw;
+  margin: 1vw;
+  border-radius: 25%;
+}
+#contactfooter #sociallink #twit {
+  border-radius: 50%;
+}
+@media screen and (max-width: 800px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    grid-auto-rows: 1fr 0.4fr 0.35fr 0.35fr;
+  }
+  nav {
+    width: 105vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  nav a {
+    font-size: 2vw;
+  }
+  #homesection {
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #homesection div {
+    text-align: center;
+    margin-left: 0;
+    height: 30vh;
+  }
+  #homesection div h2 {
+    font-size: 7vw;
+  }
+  #homesection #membership {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 80vw;
+  }
+  #homesection #membership div {
+    width: 80vw;
+    height: 80vh;
+  }
+  #homesection #membership div h2 {
+    font-size: 3vw;
+  }
+  #homesection #membership div h3 {
+    font-size: 3vw;
+  }
+  #homesection #membership #free {
+    width: 80vw;
+    height: 80vh;
+  }
+  #homesection #membership #monthly {
+    width: 80vw;
+  }
+  #homesection #membership #yearly {
+    width: 80vw;
+  }
+  #homesection #membership span {
+    margin-top: 1vh;
+    width: 5vw;
+    height: 3vh;
+  }
+  .bn39 {
+    margin: auto;
+    margin-top: 2vh;
+    width: 25vw;
+  }
+  #offerdiv1 h2 {
+    font-size: 5vw;
+  }
+  #offerdiv1 p {
+    font-size: 2.4vw;
+  }
+  #mainflipbox {
+    grid-template-columns: 1fr 1fr;
+  }
+  .flipdiv {
+    margin-left: 10vw;
+    width: 30vw;
+    height: 18vh;
+  }
+  .flipdiv img {
+    width: 30vw;
+    height: 15vh;
+  }
+  .flipdiv h2 {
+    padding: 1vw;
+    font-size: 2.5vw;
+  }
+  .flipdiv p {
+    padding: 1vw;
+    font-size: 2.5vw;
+  }
+  #aboutsection {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "path" "motive " "members";
+  }
+  #aboutsection h2 {
+    font-size: 4vw;
+  }
+  #aboutsection div {
+    width: 100vw;
+  }
+  #aboutsection div p {
+    font-size: 2vw;
+    margin-left: 0;
+    width: 92vw;
+    text-align: center;
+    padding: 2vw;
+    border: none;
+  }
+  #aboutsection div h3 {
+    font-size: 2.5vw;
+    margin-left: 0;
+    width: 100vw;
+    text-align: center;
+  }
+  #contactfooter {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.2fr;
+    grid-template-areas: "frm" "join" "soc ";
+  }
+  #contactfooter form {
+    margin: auto;
+    margin-top: 2vh;
+    width: 80vw;
+  }
+  #contactfooter form input, #contactfooter form textarea, #contactfooter form select {
+    width: 70vw;
+  }
+  #contactfooter form h3 {
+    width: 100vw;
+  }
+  #contactfooter #addressdiv {
+    display: none;
+  }
+  #contactfooter #sociallink {
+    width: 100vw;
+  }
+  #contactfooter #sociallink a img {
+    height: 5vw;
+  }
+}/*# sourceMappingURL=main.css.map */

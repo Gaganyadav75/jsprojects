@@ -287,7 +287,7 @@ navacc.onclick=()=>{disofacc(true)}
 document.getElementById("detailcut").onclick=()=>{disofacc(false)}
 
 
-let sessiondetail = JSON.parse(sessionStorage.getItem("myflix"))
+let sessiondetail = JSON.parse(localStorage.getItem("myflix"))
 
 
 
@@ -296,18 +296,18 @@ var uname = document.getElementById("name")
 var gender = document.getElementById("gender")
 var phone = document.getElementById("phone")
 
-    if (sessionStorage.getItem('AuthenticationState') === null) {
+    if (localStorage.getItem('AuthenticationState') === null) {
         window.open("index.html", "_self");
        
      }
      //Is their authentication token still valid?
-     else if (new Date <new Date(sessionStorage.getItem("AuthenticationExpires"))) {
+     else if (new Date <new Date(localStorage.getItem("AuthenticationExpires"))) {
            body.style.display="block"
            uname.innerText=sessiondetail[0];
            gender.innerText=sessiondetail[1]
            phone.innerText=sessiondetail[2];
 
-           var sessionimg = sessionStorage.getItem("myfliximg");
+           var sessionimg = localStorage.getItem("myfliximg");
 
            if (sessionimg==null) {
             if (sessiondetail[1]=="male") {
@@ -340,9 +340,9 @@ var phone = document.getElementById("phone")
      var logout = document.getElementById("logout")
 
      logout.onclick=()=>{
-        sessionStorage.removeItem("AuthenticationExpires")
-        sessionStorage.removeItem("AuthenticationState")
-        sessionStorage.removeItem("myfliximg")
+        localStorage.removeItem("AuthenticationExpires")
+        localStorage.removeItem("AuthenticationState")
+        localStorage.removeItem("myfliximg")
 
         window.location.reload();
      }
@@ -367,7 +367,7 @@ dispic.onchange =()=>{
    reader.readAsDataURL(imgsrc.files[0])
    reader.onload=()=>{
     var filename = reader.result;
-    sessionStorage.setItem("myfliximg",filename)
+    localStorage.setItem("myfliximg",filename)
     uimg.setAttribute("src",filename)
     navacc.style.backgroundImage=`url(${filename})`
    }

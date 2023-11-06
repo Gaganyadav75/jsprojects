@@ -51,7 +51,7 @@ main{
 
 header{
     display: flex;
-    height: 8vh;
+        height: 5vw;
     width: 100vw;
     position:fixed;
     z-index: 1;

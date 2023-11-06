@@ -310,14 +310,14 @@ var phone = document.getElementById("phone")
 
            if (sessionimg==null) {
             if (sessiondetail[1]=="male") {
-                navacc.style.backgroundImage="url(https://i.imgur.com/byT90Bu.png)"
-                uimg.setAttribute("src","https://i.imgur.com/byT90Bu.png")
+                navacc.style.backgroundImage="url(../img/3219866.png)"
+                uimg.setAttribute("src","../img/3219866.png")
             }else if (sessiondetail[1]=="female"){
-                navacc.style.backgroundImage="url(https://i.imgur.com/LeTHAg7.png)"
-                uimg.setAttribute("src","https://i.imgur.com/LeTHAg7.png")
+                navacc.style.backgroundImage="url(../img/girl.png)"
+                uimg.setAttribute("src","../img/girl.png")
             }else {
-                navacc.style.backgroundImage="url(https://i.imgur.com/ZNYCzx5.png)"
-                uimg.setAttribute("src","https://i.imgur.com/ZNYCzx5.png")
+                navacc.style.backgroundImage="url(../img/unknown.png)"
+                uimg.setAttribute("src","../img/unknown.png")
             }
 
            }else {

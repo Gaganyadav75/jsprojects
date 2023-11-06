@@ -247,6 +247,7 @@ posterchange("src")
 //it is for navlist click
 
 navmylist.addEventListener('click',()=>{ 
+     mylistshowdiv.innerHTML=""
     divnone()
     localcheck();
     mylistmaindiv.style.display="block"

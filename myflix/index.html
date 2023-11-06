@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login MyFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="myflx">MyFlix</h1>
+    
+    <div id="signupdiv">
+        <h1>Sign Up</h1>
+        <form  id="sheetdb-form" >
+            <input class="signupdetail" type="text" placeholder="Name" id="name" name="name" required>
+            <select class="signupdetail" name="gender" id="gender" title="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+            <input class="signupdetail" type="number" placeholder="Phone No." id="phone" name="phone" required>
+            <input class="signupdetail" type="password" name="pass" id="pass" placeholder="Password" required>
+            <input type="submit" value="Sign Up" id="signupbtn">
+        </form>
+
+        <a id="haveac">Already Have an Account!</a>
+    </div>
+
+    <div id="logindiv">
+        <h1>Login</h1>
+        <form id="loginfrm">
+            <input type="number" placeholder="Phone Number" id="loginphone" required>
+            <input type="password" placeholder="Password" id="loginpass" required>
+            <input type="button" value="Login" id="login">
+        </form>
+     
+        <a id="donthaveac">Don't Have an Account?</a>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

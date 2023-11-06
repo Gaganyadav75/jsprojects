@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+img{
+    width: 20vw;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    display: none;
+}
+
+
+
+body{
+    width: 100vw;
+}
+
+main{
+    width: 100vw;
+   
+}
+
+
+#mflex{
+    
+    color: red;
+    position: absolute;left: 2%;width: 10vw;height: 10vw;
+    z-index: 4;
+    display: none;
+    justify-content: space-between;
+}
+
+#threeline{
+    display: none;
+    color: white;
+    position: absolute;right: 0;width: 10vw;height: 10vw;
+    z-index: 4;
+    font-size: 8vw;
+    transform: rotate(90deg);
+    padding-top: 5vw;
+}
+
+
+
+header{
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+    position:fixed;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 2),rgba(0,0,0,0.1))
+}
+header h1{
+  width: 10vw;
+  display: grid;
+ place-items: center;
+ color: red;
+}
+header span{
+    display: grid;
+    place-items: center;
+ margin-left: 3vw;
+ font-size: 1.3vw;
+ word-break: normal;
+ cursor: pointer;
+ color: white;
+
+}
+
+header span:hover{
+ 
+    text-decoration: underline solid red 3px;
+}
+header div:last-child{
+    position: absolute;
+    right: 3%;
+ width: 4.5vw;
+ height: 100%;
+cursor: pointer;
+ filter: saturate(200%);
+ font-size: 3vw;
+ background-image: url(unknown.png);
+ /* filter: invert(1); */
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: top;
+ border: 1px solid white;
+ border-radius: 50%;
+}
+header span:nth-child(6){
+    position: absolute;
+    right: 15%;
+ width: 2.5vw;
+ height: 100%;
+ 
+ filter: saturate(200%);
+ font-size: 2vw;
+
+ border-radius: 50%;
+}
+
+header div:first-child:hover ,header span:nth-child(6):hover{
+    
+    text-decoration: none;
+    scale: 1.1;
+}
+
+
+#accountdetaildiv{
+    background: rgba(0, 0, 0, 1);
+    text-align: center;
+    color: white;
+    width: 20vw;
+    height: 20vw;
+    z-index:3;
+    position: absolute;
+    right: 0;
+    display: none;
+    
+}
+
+
+#acimg{
+    margin: 3%;
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    
+}
+
+#accountdetaildiv h2{
+    margin: 3%;
+}
+
+#detailcut{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2.5vw;
+}
+#detailcut:hover,#accountdetaildiv button:hover{
+   background-color: red;
+   padding: 1%;
+   cursor: pointer;
+   color: white;
+}
+
+#accountdetaildiv button{
+    height: 10%;
+    width: 50%;
+    
+}
+
+
+
+.featured::before{
+    content: "";
+    position: absolute;
+    width: 30vw;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 3),rgba(0,0,0,0.0))
+}
+
+.featured{
+    width: 98vw;
+    height: 80vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    z-index: 1;
+   
+}
+
+.featured h2{
+    font-size: 3vw;
+    width: 25vw;
+    display: grid;
+    color: white;
+    place-items: center;
+    z-index: 1;
+    text-align: center;
+
+}
+
+
+#featuredbtndiv{
+    z-index: 1;
+    height: 5%;
+    width: 25vw;
+    padding-left: 1%;
+    display: flex;
+   justify-content: space-evenly;
+   
+}
+#featuredbtndiv button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.featured p{
+     width: 25%;
+     height: 10%;
+     overflow: hidden;
+ padding-left: 2%;
+color: white;
+ margin-bottom: 1%;
+ z-index: 1;
+
+}
+
+.featured p:hover{
+    position: relative;
+    overflow: visible;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.showdivs{
+    background: rgba(0, 0, 0, 0.8);
+    position:relative;
+    top: 0;
+
+}
+
+
+
+.showdivs img{
+  height: 40vh;
+    margin:0 5px ;
+}
+.showdivs img:hover{
+scale: 1.1;
+
+}
+.showdivs h2{
+   padding-left: 2%;
+   height: 6vh;
+   display: flex;
+   align-items: center;
+   font-size: 2vw;
+   color: white;
+   background: linear-gradient(rgb(0, 0, 0),rgba(41, 38, 38, 0));
+}
+
+.moviesdiv , #tvshows ,#moviesshowdiv ,#mylistshowdiv{
+    display: flex;
+ 
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#mylistshowdiv img{
+    height: 40vh;
+    width: auto;
+    margin:0 5px ;
+}
+
+.moviesdiv::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {  
+
+  
+.featured{
+    background-position: center;
+    height: 75vh;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.featured h2 {
+   width: 60%;
+font-size: 120%;
+}
+.featured p{
+    width: 50%;
+font-size: 60%;
+}
+.featured::before{
+    top: initial;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 40%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 3),rgba(0,0,0,0.0));
+}
+#featuredbtndiv{
+    width: 50%;
+font-size: 100%;
+height: 7%;
+
+}
+#featuredbtndiv button{
+    width: 32%;
+    
+
+}
+
+header{
+    display: none;
+    height: 50vh;
+    width: 60vw;
+    place-items: flex-start;
+    padding-top: 15%;
+    z-index: 3;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 5fr;
+    grid-template-areas: "ac" "h" "ts" "mv" "ml" "sc";
+   
+    
+}
+header span{
+    font-size: 5vw;
+}
+
+#navhome{
+    grid-area: h;
+ 
+
+}
+#navtvshow{
+    grid-area: ts;
+
+
+}
+#navmovie{
+    grid-area: mv;
+ 
+
+}
+#navmylist{
+    grid-area: ml;
+   
+
+}
+#navsearch{
+position: static;
+grid-area: sc;
+font-size: 5vw;
+
+}
+#account{
+    position: static;
+    grid-area: ac;
+    margin-bottom: 5%;
+    height: 15vw;
+    width: 15vw;
+    margin-left: 5%;
+}
+ 
+header h1{
+display: none;
+  
+}
+
+
+.showdivs img{
+    height:20vh;
+}
+
+#mylistshowdiv img{
+    height:20vh;
+}
+
+
+#accountdetaildiv{
+width: 38vw;
+height: fit-content;
+    padding-top: 10%;
+
+    z-index: 5;
+}
+
+#acimg{
+  width: 15vw;
+  height: 15vw;
+}
+
+#accountdetaildiv h2{
+  font-size: 5vw;
+}
+
+#logout{
+ margin-bottom: 5%;
+}
+
+#mflex{
+    
+    color: red;
+    position: absolute;left: 2%;width: 10vw;height: 10vw;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+#threeline{
+    display: block;
+    color: white;
+    position: absolute;right: 0;width: 10vw;height: 10vw;
+    z-index: 4;
+    font-size: 8vw;
+    transform: rotate(90deg);
+    padding-top: 5vw;
+}
+
+
+
+  }
+
+
+  #dispic{
+ display: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0.1%;
+    width:0.1%;
+    z-index: 6;
+  }

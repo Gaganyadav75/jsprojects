@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myflixs</title>
+
+    <link rel="stylesheet" href="net.css">
+</head>
+<body id="body">
+
+    <main>
+
+        <h2 id="mflex">MyFlix</h2>
+        <div id="threeline">|||</div>
+       
+<header id="headerdis">
+    <h1>MyFlix</h1>
+    <span id="navhome">Home</span>
+    <span id="navtvshows">Tv_Shows</span>
+    <span id="navmovie">Movies</span>
+    <span id="navmylist">My_List</span>
+    <span id="navsearch">🔍</span>
+    <div id="account"></div>
+</header>
+
+<div id="accountdetaildiv">
+    <img src="https://i.imgur.com/ZNYCzx5.png" alt="" id="acimg">
+    <h2 id="name">Name</h2>
+    <h2 id="gender">Gender</h2>
+    <h2 id="phone">Phone</h2>
+    <button id="logout">Logout</button>
+    <h2 id="detailcut"> X </h2>
+</div>
+
+
+    <div class="featured">
+        <h2 id="moviename"></h2>
+        <p id="moviedesc"></p>
+        <div id="featuredbtndiv">
+            <button>
+                <lord-icon
+                src="https://cdn.lordicon.com/aklfruoc.json"
+                trigger="loop-on-hover"
+                style="width:30%;height:100%">
+            </lord-icon><span>Play</span></button>
+            <button id="addlistbtn">List</button><br>
+        </div>
+     
+        
+    </div>
+
+<div id="maindiv" class="showdivs">
+    <h2>Wishlist</h2>
+    <div class="moviesdiv" id="wishlist" ></div>
+    <h2>Trending</h2>
+    <div class="moviesdiv" id="trending"></div>
+    <h2>Top Rated</h2>
+    <div class="moviesdiv" id="toprated" ></div>
+</div>
+
+<div id="tvshowsdiv" class="showdivs">
+    <h2>Tv Shows</h2>
+    <div id="tvshows"></div>
+</div>
+<div id="moviesmaindiv" class="showdivs">
+    <h2>Movies</h2>
+    <div id="moviesshowdiv"></div>
+</div>
+<div id="mylistmaindiv" class="showdivs">
+    <h2>My List</h2>
+    <div id="mylistshowdiv"></div>
+</div>
+
+</main>
+
+
+<input type="file" src="" alt="" id="dispic" title="profilepic" accept="image/png ,image/jpeg , image/jpg">
+    <script src="net.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+</body>
+</html>

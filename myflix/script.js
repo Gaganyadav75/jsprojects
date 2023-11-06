@@ -101,7 +101,7 @@ loginbtn.addEventListener('click',()=>{
 )
 
 
-window.onload=()=>{
+window.onpageshow=()=>{
     let sessionauth = sessionStorage.getItem("AuthenticationState")
     let sessionexpire = sessionStorage.getItem("AuthenticationExpires")
     

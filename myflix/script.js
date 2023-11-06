@@ -73,7 +73,7 @@ loginbtn.addEventListener('click',()=>{
             if (gotval[3]==loginpass.value){
                 localStorage.setItem("AuthenticationState", "Authenticated");
                 localStorage.setItem("AuthenticationExpires",expirationDate.toISOString());
-               localStorage.setItem("myflix",JSON.parse(localStorage.getItem(loginphone.value)));
+               localStorage.setItem("myflix",localStorage.getItem(loginphone.value));
                 setTimeout(() => {
                     // window.open('https://gaganyadav75.github.io/jsprojects/netflixapp/','_self');
                     window.open('net.html','_self');

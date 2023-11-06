@@ -334,12 +334,12 @@ height: 7%;
 
 header{
     display: none;
-    height: 50vh;
+    height: 100vh;
     width: 60vw;
     place-items: flex-start;
     padding-top: 15%;
     z-index: 3;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 5fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 6fr;
     grid-template-areas: "ac" "h" "ts" "mv" "ml" "sc";
    
     

@@ -38,6 +38,7 @@ signupfrm.onsubmit=()=>{
           sessionStorage.setItem(signupdetailforlstor[2],JSON.stringify(signupdetailforlstor));
           sessionStorage.setItem("AuthenticationState", "Authenticated");
           sessionStorage.setItem("AuthenticationExpires", expirationDate.toISOString());
+        
           sessionStorage.setItem("myflix",JSON.stringify(signupdetailforlstor))
 
           haveac.click();

@@ -177,7 +177,7 @@ addlistbtn.addEventListener('click',()=>{
         for (let i = 0; i < imgarrayofall.length; i++) {
             
                if (imgarrayofall[i][0]==mvname) {
-                console.log(imgarrayofall[i][0]);
+                
               x++;
                
                }

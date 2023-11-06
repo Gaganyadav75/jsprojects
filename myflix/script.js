@@ -25,7 +25,7 @@ signupfrm.onsubmit=()=>{
     let expirationDate = new Date(new Date().getTime() + (60000 * 7200))
     var phone = document.getElementById("phone")
     if (phone.value!="" ) {
-    if (sessionStorage.getItem(phone.value)==null) {
+    if (localStorage.getItem(phone.value)==null) {
 
 
 
@@ -35,11 +35,11 @@ signupfrm.onsubmit=()=>{
               signupdetailforlstor[i]=detail.value;
               i++;
           }) 
-          sessionStorage.setItem(signupdetailforlstor[2],JSON.stringify(signupdetailforlstor));
-          sessionStorage.setItem("AuthenticationState", "Authenticated");
-          sessionStorage.setItem("AuthenticationExpires", expirationDate.toISOString());
+          localStorage.setItem(signupdetailforlstor[2],JSON.stringify(signupdetailforlstor));
+          localStorage.setItem("AuthenticationState", "Authenticated");
+          localStorage.setItem("AuthenticationExpires", expirationDate.toISOString());
         
-          sessionStorage.setItem("myflix",JSON.stringify(signupdetailforlstor))
+          localStorage.setItem("myflix",JSON.stringify(signupdetailforlstor))
 
           haveac.click();
     
@@ -63,7 +63,7 @@ var loginpass= document.getElementById("loginpass")
 var loginfrm= document.getElementById("loginfrm")
 
 loginbtn.addEventListener('click',()=>{
-   var gotval= JSON.parse(sessionStorage.getItem(loginphone.value))
+   var gotval= JSON.parse(localStorage.getItem(loginphone.value))
 //    console.log(gotval);
    let expirationDate = new Date(new Date().getTime() + (60000 * 7200))
    if (loginphone.value!="" && loginpass.value!="") {
@@ -71,9 +71,9 @@ loginbtn.addEventListener('click',()=>{
        
             
             if (gotval[3]==loginpass.value){
-                sessionStorage.setItem("AuthenticationState", "Authenticated");
-                sessionStorage.setItem("AuthenticationExpires",expirationDate.toISOString());
-               sessionStorage.setItem("myflix",sessionStorage.getItem(loginphone.value));
+                localStorage.setItem("AuthenticationState", "Authenticated");
+                localStorage.setItem("AuthenticationExpires",expirationDate.toISOString());
+               localStorage.setItem("myflix",sessionStorage.getItem(loginphone.value));
                 setTimeout(() => {
                     // window.open('https://gaganyadav75.github.io/jsprojects/netflixapp/','_self');
                     window.open('net.html','_self');
@@ -103,10 +103,10 @@ loginbtn.addEventListener('click',()=>{
 
 
 window.onpageshow=()=>{
-    let sessionauth = sessionStorage.getItem("AuthenticationState")
-    let sessionexpire = sessionStorage.getItem("AuthenticationExpires")
+    let sessionauth = localStorage.getItem("AuthenticationState")
+    let sessionexpire = localStorage.getItem("AuthenticationExpires")
     
-    if (sessionStorage.getItem("myflix")!=null && sessionauth=="Authenticated") {
+    if (localStorage.getItem("myflix")!=null && sessionauth=="Authenticated") {
         
         window.open('net.html','_self');
     }

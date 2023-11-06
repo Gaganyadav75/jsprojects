@@ -62,6 +62,7 @@ header h1{
   display: grid;
  place-items: center;
  color: red;
+     font-size: 3.5vw;
 }
 header span{
     display: grid;
@@ -137,6 +138,7 @@ header div:first-child:hover ,header span:nth-child(6):hover{
 
 #accountdetaildiv h2{
     margin: 3%;
+     font-size: 2vw;
 }
 
 #detailcut{
@@ -182,6 +184,7 @@ header div:first-child:hover ,header span:nth-child(6):hover{
     justify-content: center;
     padding-left: 2%;
     z-index: 1;
+        background-position: top;
    
 }
 
@@ -247,7 +250,7 @@ color: white;
 
 
 .showdivs img{
-  height: 40vh;
+  height: 30vw;
     margin:0 5px ;
 }
 .showdivs img:hover{
@@ -272,7 +275,7 @@ scale: 1.1;
 }
 
 #mylistshowdiv img{
-    height: 40vh;
+   height: 30vw;
     width: auto;
     margin:0 5px ;
 }
@@ -288,6 +291,10 @@ scale: 1.1;
 
 @media screen and (max-width: 700px) {  
 
+    html{
+        overflow-x: hidden;
+        overflow-y: scroll;
+}
   
 .featured{
     background-position: center;
@@ -383,11 +390,11 @@ display: none;
 
 
 .showdivs img{
-    height:20vh;
+  height: 30vw;
 }
 
 #mylistshowdiv img{
-    height:20vh;
+   height: 30vw;
 }
 
 

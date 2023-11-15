@@ -106,7 +106,7 @@ window.onpageshow=()=>{
     let sessionauth = localStorage.getItem("AuthenticationState")
     let sessionexpire = localStorage.getItem("AuthenticationExpires")
     
-    if (localStorage.getItem("myflix")!=null && sessionauth=="Authenticated") {
+    if (localStorage.getItem("myflix")!=null && sessionauth=="Authenticated" && new Date < new Date(sessionexpire)) {
         
         window.open('net.html','_self');
     }

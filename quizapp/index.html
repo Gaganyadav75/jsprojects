@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="quiz.png">
+   
+</head>
+<body>
+    <div class="sss">
+       
+        <div class="category">
+            <h2>Simple Quiz</h2>
+            <select name="category" id="selectcat" title="category">
+                <option value="9">G.K</option>
+                <option value="11">Films</option>
+                <option value="23">History</option>
+                <option value="22">Geography</option>
+                <option value="18">Computers</option>
+                <option value="19">Mathematics</option>
+                <option value="12">Music</option>
+                <option value="29">Comics</option>
+                <option value="28">Vehicles</option>
+                <option value="31">Anime & Manga</option>
+                <option value="24">Politics</option>
+                <option value="21">Sports</option>
+                <option value="20">Mythology</option>
+            </select>
+            <select name="defeculty" id="selectdef" title="deficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <select name="type" id="selecttype" title="type">
+                <option value="multiple">Multiple</option>
+                <option value="boolean">True/False</option>
+                
+            </select>
+            <button id="start">Start</button>
+    
+        </div>
+    </div>
+    
+    <div class="timer">
+        00
+    </div>
+    
+    <div class="main">
+        <h2>Simple Quiz</h2>
+        <hr>
+        <div class="quiz">
+            <h3 id="ques"></h3>
+            <div class="answerbtn">
+             
+            </div>
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+    <audio src="timer.mp3" id="second3" style="display: none;" ></audio>
+    <audio src="3 second timer.mp3" id="ticktack"  style="display: none;"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

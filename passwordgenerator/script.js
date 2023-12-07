@@ -1,7 +1,7 @@
 const passwordinput = document.getElementById("passshow");
 const selectlen = document.getElementById("length");
 const btn = document.getElementById("btn");
-const copy = document.getElementById("span");
+const copy = document.getElementById("span2");
 let length = 12;
 
 const upppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

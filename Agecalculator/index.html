@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <span class="mainspan">
+            <input type="date" name="age" id="age" title="Age" formnovalidate>
+            <button id="btn">Calculate</button>
+        </span>
+        <h3>You are <span id="year">0</span> years, <span id="month">0</span> months, <span id="days">0</span> days old</h3>
+    </div>
+
+    <script>
+        const ageinput = document.getElementById("age");
+        const btn = document.getElementById("btn");
+        let year = document.getElementById("year");
+        let month = document.getElementById("month");
+        let days = document.getElementById("days");
+       
+        const Calculateage = () => {
+            let birthday = new Date(ageinput.value);
+            if (birthday!="Invalid Date") {
+                
+            let today = new Date();
+            
+            let d1 = birthday.getDate();
+            let m1 = birthday.getMonth();
+            let y1 = birthday.getFullYear();
+            let d2 = today.getDate();
+            let m2 = today.getMonth();
+            let y2 = today.getFullYear();
+
+            let d3 ,m3,y3;
+            y3 = y2-y1;
+            if (m2>=m1) {
+                m3 = m2-m1;
+            }else{
+                y3--;
+                m3 = 12+m2 - m1;
+            }
+            if (d2>=d1) {
+                d3 = d2-d1;
+            }else{
+                m3--;
+                d3 = getdayinmonth(y1,m1)+d2-d1;
+            }
+            if (m3<0) {
+                m3=11;
+                y--;
+            }
+
+            year.innerHTML=y3
+            month.innerHTML=m3
+            days.innerHTML=d3
+        }
+
+        }
+
+        const getdayinmonth = (year,month) =>{
+            return new Date(year,month,0).getDate();
+        }
+
+        btn.addEventListener("click",Calculateage)
+        
+
+       
+
+
+    </script>
+</body>
+</html>

@@ -27,6 +27,7 @@ let clicked = false;
 let seconds = 30;
 let sixty = 30;
 
+let audiocontrol = true;
 
 
 start.addEventListener('click',()=>{
@@ -45,6 +46,7 @@ start.addEventListener('click',()=>{
 
 next_btn.addEventListener('click',()=>{
     clicked=false;
+      audiocontrol = true;
     questionnumber++;
     if (questionnumber<11) {
     updater(questionnumber,allquestions[questionnumber-1])
@@ -96,7 +98,7 @@ const anschecker =(e,i) =>{
     if (e.target.tagName=="BUTTON") {
         next_btn.style.display="block";
         clicked = true;
-
+        audiocontrol = false;
         if (e.target.innerText===ritans) {
             e.target.classList.add("correct")
             marks++;
@@ -190,7 +192,9 @@ const updater = (indnum,questionarray) => {
 }
 
 const timeupdater = () => {
-  setInterval(() => {
+    setInterval(() => {
+    if (audiocontrol) {
+    
     if (questionnumber<=11) {
         timer.innerText=seconds;
         if (seconds<=0) {
@@ -202,14 +206,18 @@ const timeupdater = () => {
         if (seconds<5) {
             second3.pause();
             ticktack.play();
+             
         }else if (seconds>=5) {
-            second3.play();
             ticktack.pause()
+            second3.play();
           }
-    }
+        }
+}else{
+    ticktack.pause()
+    second3.pause();
+}
 
   }, 1000);
-
         
     
 }

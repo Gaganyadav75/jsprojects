@@ -15,7 +15,7 @@ ctx.lineJoin = ctx.lineCap = 'round';
 ctx.strokeStyle = "black"
 let writingMode = false;
 
-let prevval = []
+
 
 
 const valuesetter = (ele,val) =>{
@@ -37,8 +37,8 @@ size.addEventListener("change",()=>{
 
 
 const getCursorPosition = (event) => {
-    positionX = event.clientX - event.target.getBoundingClientRect().x;
-    positionY = event.clientY - event.target.getBoundingClientRect().y;
+   let positionX = event.clientX - event.target.getBoundingClientRect().x;
+   let positionY = event.clientY - event.target.getBoundingClientRect().y;
     // console.log(positionX,positionY);
     return [positionX, positionY];
   }
@@ -53,7 +53,7 @@ const handlePointerDown = (event) => {
 
   const handlePointerUp = () => {
     writingMode = false;
-    prevval.push(ctx)
+
   }
 
 const handlePointerMove = (event) => {
@@ -64,19 +64,8 @@ const handlePointerMove = (event) => {
   }
 
 
-window.addEventListener("keydown",(e)=>{
-    if (e.key=='z') {
-        prevval.pop();
-        console.log(prevval[prevval.length-1]);
-        ctx = prevval[prevval.length-1].getContext('2d');
-    }
-})
 
-
-
-
-
-  canvas.addEventListener('pointerdown', handlePointerDown,{passive:true});
+canvas.addEventListener('pointerdown', handlePointerDown,{passive:true});
 canvas.addEventListener('pointerup', handlePointerUp,{passive:true});
 canvas.addEventListener('pointermove', handlePointerMove,{passive:true});
 

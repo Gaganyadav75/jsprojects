@@ -19,6 +19,7 @@
     cursor: url(pen.png) 1 26, pointer;
     border: 2px solid var(--primary-color);
     border-radius: 4px;
+    width: 700px;
   }
   .clear-button {
     color: var(--primary-color);
@@ -63,5 +64,11 @@
   @media (pointer: coarse) {
     body {
       overflow: hidden; /* Needed to prevent the vertical scroll on touch devices */
+    }
+  }
+
+  @media screen and(max-width:764px) {
+    .signature-pad{
+      width: 300px;
     }
   }

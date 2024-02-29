@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+body , html{
+    width: 100vw;
+    overflow-x: hidden;
+    /* background-color: black; */
+}
+
+.mainsection{
+    background: url(./websiteimages/pexels-photo-386009.webp);
+    height: 100vh;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainsection::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    backdrop-filter: brightness(70%);
+    -webkit-backdrop-filter: brightness(70%);
+}
+
+
+.yondertext{
+    margin-top: 5%;
+    z-index: 2;
+
+}
+.yondertext h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 3vw;
+text-align: center;
+color: white;
+}
+.yondertext h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5vw;
+text-align: center;
+color: white;
+}
+
+.lowertexts{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+margin-bottom: 12%;
+}
+
+.lowertexts h2{
+text-align: center;
+font-size: 3vw;
+font-family: 'Cormorant Garamond', serif;
+color: white;
+}
+.lowertexts h5{
+text-align: center;
+font-size: 1.7vw;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.lowertexts button{
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+    aspect-ratio: 8/1;
+width: 20%;
+background-color: rgb(93, 176, 93);
+color: white;
+}
+
+.lowertexts button:hover{
+    background-color: green;
+}
+
+
+.whyyonder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+
+.whyyonder h2{
+    color: rgb(0, 181, 240);
+    font-size: 2.6vw;
+}
+.whyyonder p{
+  text-align: center;
+    font-size: 1.3vw;
+    width: 60%;
+    margin-top: 1%;
+}
+
+.insidewhyyonder{
+    display: flex;
+}
+.insidewhyyonder div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+}
+.insidewhyyonder div img{
+   
+    width: 35%;
+}
+
+.insidewhyyonder div p{
+    width: 55%;
+    text-justify: inter-word;
+}
+
+
+.topplaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0 3% 0;
+}
+
+.topplaces h2{
+    color: rgb(0, 181, 240);
+    font-size: 2.6vw;
+
+}
+.topplaces p{
+    text-align: center;
+    font-size: 1.3vw;
+    width: 60%;
+    margin-top: 1%;
+
+}
+
+
+.insidetopplaces{
+     margin-top: 2%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr 1fr ;
+    grid-template-rows:0.5fr 0.5fr 0.5fr 0.5fr  ;
+    grid-template-areas: "divt1 divt2 divt3" "divt1 divt2 divt3" "divt1 divt2 divt4" "divt5 divt2 divt4";
+    grid-gap: 2%;
+
+}
+
+.divt1{
+    grid-area: divt1;
+}
+.divt2{
+    grid-area: divt2;
+}
+.divt3{
+    grid-area: divt3;
+}
+.divt4{
+    grid-area: divt4;
+}
+.divt5{
+    grid-area: divt5;
+}
+
+.topplaceimgdiv{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.topplaceimgdiv img{
+   width: 100%;
+   height: 100%;
+    
+}
+.topplaceimgdiv div{
+    
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    color: white;
+}
+
+
+.emaildiv{
+    background: url(./websiteimages/imagetravelblur.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+.insideemaildiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insideemaildiv h2{
+    color:rgba(114,207,107,1);
+}
+.insideemaildiv p{
+    width: 65%;
+    text-align: center;
+}
+.insideemaildiv div{
+    margin-top: 2%;
+    display: flex;
+    width: 55%;
+    aspect-ratio: 15/1;
+    border-radius: 30px;
+    
+    justify-content: space-around;
+
+}
+
+
+.insideemaildiv div input{
+width: 48%; 
+border-radius: 30px;
+border: none;
+padding: 1%;
+filter: drop-shadow(2px 3px 3px green);
+outline: none;
+}
+
+
+
+.insideemaildiv div input:last-child{
+    background-color: rgba(114,207,107,1) ;
+    color: white
+}
+
+.insideemaildiv div input:last-child:hover{
+    background-color: green;
+}
+
+/* happy travelers */
+
+.happytravelers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    grid-gap: 3%;
+    width: 70%;
+}
+
+.insidehappytravels{
+    display: grid;
+ grid-template-columns: 1fr 2fr;
+    margin-top: 7%;
+    justify-content: space-between;
+
+}
+
+.insidehappytravels img{
+    border-radius: 50%;
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+.insidehappytravels div{
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    
+}
+.insidehappytravels div h3{
+    width: 100%;
+}
+.insidehappytravels div span{
+    font-size: 0.85vw;
+}
+
+@media screen and (max-width:700px) {
+
+    .mainsection{
+        height: 85vh;
+        min-height: 600px;
+    }
+    .mainsection::before{
+        height: 85vh;
+        min-height: 600px;
+    }
+
+
+    .yondertext h1 {
+        font-size: 10vw;
+   
+    }
+    .yondertext h4{
+    font-size: 5vw;
+    }
+    
+    .lowertexts{
+        
+    }
+    
+    .lowertexts h2{
+        margin-bottom: 2%;
+        font-size: 14vw;
+        line-height: 0.9;
+
+    }
+    .lowertexts h5{
+        width: 70vw;
+        margin-bottom: 2%;
+        font-size: 6vw;
+        line-height: 0.9;
+    }
+    .lowertexts button{
+        
+  width: 80vw;
+    }
+    
+
+
+  
+    
+    .whyyonder h2{
+      
+        font-size: 5vw;
+    }
+    .whyyonder p{
+      
+        font-size: 3vw;
+       
+    }
+    
+    .insidewhyyonder{
+        display: flex;
+        flex-direction: column;
+    }
+    .insidewhyyonder div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .insidewhyyonder div img{
+       
+        width: 35%;
+    }
+    
+    .insidewhyyonder div p{
+        width: 50%;
+        font-size: 3vw;
+        
+    }
+
+
+   
+    
+    .topplaces h2{
+        color: rgb(0, 181, 240);
+        font-size: 5vw;
+    
+    }
+    .topplaces p{
+      font-size: 3vw;
+    
+    }
+    
+    
+    .insidetopplaces{
+         margin-top: 2%;
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:0.5fr 0.4fr 0.3fr 0.5fr 0.17fr;
+        grid-template-areas:
+        "divt1"
+        "divt2"
+        "divt3"
+        "divt4"
+        "divt5";
+}
+
+
+
+.emaildiv{
+    min-height: 320px;
+}
+
+.insideemaildiv h2{
+    color:rgba(114,207,107,1);
+    font-size: 7vw;width: 85%;
+    text-align: center;
+}
+
+.insideemaildiv div{
+    margin-top: 2%;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 10%;
+    width: 100%;
+    
+place-items: center;
+
+}
+
+
+.insideemaildiv div input{
+width: 120%; 
+aspect-ratio: 10/1;
+
+}
+
+
+
+.happytravelers{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    grid-gap: 3%;
+    width: 70%;
+    padding-bottom: 5%;
+}
+
+.insidehappytravels{
+    display: grid;
+ grid-template-columns: 1fr;
+ place-items: center;
+
+
+}
+
+.insidehappytravels img{
+    width: 40%;
+}
+.insidehappytravels div{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+    
+    }
+
+
+    
+    
+
+    
+
+
+
+
+

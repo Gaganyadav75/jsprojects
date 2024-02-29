@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body , html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.maindiv{
+    position: relative;
+    height: 80vh;
+    background: url(./foodweb.jpg);
+   
+    background-position: top;
+    
+}
+
+.maintextdiv{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter:  brightness(70%);
+   -webkit-backdrop-filter: brightness(70%);
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mainlogodiv{
+position: absolute;
+display: flex;
+top: 0;
+left: 0;
+padding: 1% 0% 0 2%;
+}
+.mainlogodiv p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 7px;
+    font-weight: bolder;
+    color: white;
+    font-size: 130%;
+    
+
+}
+
+.mainlogo{
+position: relative;
+
+    width: 3%;
+    min-width: 40px;
+    aspect-ratio: 1/1;
+    border: 3px solid white;
+    border-radius: 50%;
+
+}
+
+.insidemainlogo{
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    left: 50%;
+    top: 50%;
+    aspect-ratio: 1/1;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 70%;
+
+}
+
+
+.h1buttoncontainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.h1buttoncontainer h1{
+    text-align: center;
+    padding-bottom: 2%;
+    color: white;
+    
+}
+.h1buttoncontainer button{
+    
+    text-align: center;
+    border: none;
+    width: 60%;
+    padding: 2%;
+    color: white;
+    border-bottom: 5px solid orange;
+    background-color: rgb(255, 235, 14);
+    border-radius: 5px;
+
+}
+
+.h1buttoncontainer button:active{
+    border: none;
+}
+
+
+.threefoodmaindiv{
+    padding: 2% 0 2% 0;
+   
+    min-height: 180px;
+}
+.threefoodmaindiv h2{
+  text-align: center;
+  color: red;
+}
+
+
+.insidethreefooddiv{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+height: 80%;
+min-height: 90px;
+}
+
+.imgdiv{
+    width: 15%;
+    height: 100%;
+
+}
+
+.img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    aspect-ratio: 1/1;
+
+}
+
+.imgdiv p{
+    padding-top: 5%;
+   text-align: center;
+   font-weight: bolder;
+   color: red;
+
+}
+
+
+.aboutsection{
+ 
+   
+  
+  color: white;
+    background: url(./websiteimages/foodweb.jpg);
+    /* filter: brightness(70%); */
+    background-position-x: left;
+    background-position-y: bottom;
+   
+}
+
+.insideabout{
+    height: 35vh;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 3%;
+    backdrop-filter:  brightness(70%);
+    -webkit-backdrop-filter: brightness(70%);
+}
+
+.insideabout h2{
+    text-align: center;
+    margin-bottom: 2%;
+}
+.insideabout p{
+   font-size: 120%;
+}
+
+
+
+footer{
+   
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.quotesign{
+    width: 10%;
+    min-width: 20px;
+}
+.quotesign h1{
+    width: 100%;
+    text-align: center;
+    transform: rotate(180deg) scale(2);
+  
+}
+footer h2{
+    text-align: center;
+    color: red;
+}
+
+.ownerimgdiv{
+    height: 20vh;
+    margin-top: 5%;
+    min-height: 85px;
+    
+}
+.ownerimgdiv img{
+    border-radius: 50%;
+    height: 80%;
+    aspect-ratio: 1/1;
+    
+}
+.ownerimgdiv h4{
+    text-align: center;
+    color: rgb(153, 20, 20);
+}
+
+footer p{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+
+    .maindiv{
+        height: 100vh;
+    }
+
+  .h1buttoncontainer{
+        width: 100%;
+
+    }
+  .h1buttoncontainer h1{
+        font-size: 100%;
+
+    }
+  .h1buttoncontainer button{
+        font-size: 70%;
+
+    }
+
+    .threefoodmaindiv{
+       
+    }
+    .threefoodmaindiv h2{
+        font-size: 100%;
+    }
+
+    
+.insidethreefooddiv{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+height: 85%;
+}
+
+.imgdiv{
+    width: 40%;
+    
+
+}
+.img{
+    height: 70%;
+}
+
+
+.insideabout{
+    height: 70vh;
+}
+.insideabout h2{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.insideabout p{
+   font-size: 85%;
+}
+
+footer{
+    padding: 5%;
+    height: 90vh;
+}
+
+footer h2{
+   
+font-size: 90%;
+
+}
+
+.ownerimgdiv{
+    height: 25vh;
+}
+
+footer p{
+    font-size: 60%;
+}
+
+}

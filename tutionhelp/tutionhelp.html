@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice html</title>
+
+    <style>
+
+*{
+    /* border: 1px solid black; */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#navbar{
+background-color: black;
+height: 6vh;
+
+}
+
+#navul{
+    display: flex;
+    align-self: center;
+}
+
+.navlist{
+    margin-top: 15px;
+    display: inline-block;
+    width: 8%;
+    font-size: 20px;
+    color: white;
+    /* height: 100%; */
+}
+
+#lim{
+    width: 4%;
+}
+
+#navdetail{
+    margin-left: 5px;
+}
+
+#navdetail li{
+    color: black;
+}
+
+#afternavimg{
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://i.imgur.com/ehzm5jP.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#whitediv1{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    
+}
+
+#whitediv1 h2{
+    text-align: center;
+    margin-top: 3.5%;
+   
+}
+
+#whitediv1 p{
+    margin-top: 5%;
+   padding: 0 10%;
+  
+}
+
+#imginwhitediv{
+    
+    margin-top: 7%;
+    
+
+    height: 40%;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#imginwhitediv img{
+height: 80%;
+width: 20%;
+
+}
+
+#blackbgdiv{
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+#blackbgdiv H2{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#whitedivinblackdiv{
+    background-color: white;
+    height: 23%;
+    margin: 3% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#whitedivinblackdiv div{
+   width: 100%;
+   display: flex;
+   height: 33%;
+   border-bottom: 1px solid black;
+    
+    
+    
+}
+
+#whitedivinblackdiv div p{
+    font-size: 22px;
+    width: 20%;
+    text-align: center;
+    margin: auto 2%;
+   
+}
+
+.soldout{
+    font-size: 100%;
+    width: 5%;
+    height: 90%;
+    
+    background-color: red;
+}
+
+#blackdiv3img{
+margin: 0% 10%;
+width: 80%;
+height: 65%;
+margin-bottom: 5%;
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.blackdivimg{
+    background-color: white;
+width: 30%;
+}
+
+.blackdivimg img{
+height: 50%;
+width: 100%;
+}
+
+.blackdivimg p, button{
+    font-size: 20px;
+    margin-left: 4%;
+}
+
+.blackdivimg button{
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+}
+
+.para{
+    margin-top: 5%;
+    margin-right: 2%;
+}
+
+
+.pname{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: white;
+}
+
+#contact{
+    height: 40%;
+    padding: 5%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 170%;
+}
+
+#cdetail p{
+    text-align: left;
+    
+}
+
+#lastflex{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#idetail input{
+    font-size: 70%;
+    background-color: aliceblue;
+}
+
+#footimg{
+    height: 50%;
+    width: 100%;
+    background-image:url(https://i.imgur.com/r9noEuC.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+<nav id="navbar">
+    <ul id="navul">
+        <li class="navlist">HOME</li>
+        <li class="navlist">BAND</li>
+        <li class="navlist">TOUR</li>
+        <li class="navlist">CONTACT</li>
+        <li class="navlist" id="lim">MORE</li>
+        <li class="navlist">
+            <details id="navdetail">
+                <summary></summary>
+              
+                <li>Ankit</li>
+                <li>Abhishek</li>
+                <li>Gagan</li>
+                <li>Suraj</li>
+
+
+            </details></li>
+        
+        
+    </ul> 
+</nav>
+
+<div id="afternavimg">
+    
+</div>
+
+<div id="whitediv1">
+
+    <h2>THE BAND</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet aspernatur repellendus, hic ea provident voluptatibus excepturi veniam, a voluptates ratione beatae iure blanditiis accusantium optio ipsum, quas facilis explicabo fugit soluta. Quidem id nesciunt odio laboriosam, expedita sequi quia exercitationem repudiandae ut. Iusto voluptatibus fuga autem perferendis facilis! In dicta exercitationem veritatis sequi vero ullam eum commodi, unde voluptatem facilis cupiditate blanditiis quae tempora rem tenetur soluta saepe aliquid reiciendis illo provident debitis perferendis, odio, itaque odit! Reprehenderit, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, nam. Quasi eveniet corporis illo nesciunt recusandae aliquam error, expedita maxime, porro sed aperiam modi cum, quaerat minima provident nostrum. Dolorem molestiae consequuntur minima dignissimos odit perferendis veritatis dolore voluptatem voluptatibus ullam. Distinctio assumenda quaerat officia quos sapiente, obcaecati quo consequatur.</p>
+
+    <div id="imginwhitediv">
+        <img src="https://i.imgur.com/oL2jiSm.jpg" alt="">
+        <img src="https://i.imgur.com/dLU9hSs.jpg" alt="">
+        <img src="https://i.imgur.com/3UVdEWh.jpg" alt="">
+    </div>
+
+</div>
+
+<div id="blackbgdiv">
+    <h2>TOUR DATES</h2>
+    <div id="whitedivinblackdiv">
+        <div><p>SEPTEMBER</p> <P class="soldout">Sold out</P></div>
+        <div><P>OCTOBER</P> <P class="soldout" >Sold out</P></div>
+        <div><P>NOVEMBER</P></div>
+    </div>
+
+    <div id="blackdiv3img">
+        <div class="blackdivimg" id="blackdivimg1">
+            <img src="https://i.imgur.com/t75OgZl.jpg" alt="">
+            <p class="pname">New York</p>
+            <p>Fri37 Nov 2016</p>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, asperiores!</p>
+            <button>Buy Tickets</button>
+        </div>
+        <div class="blackdivimg" id="blackdivimg2">
+            <img src="https://i.imgur.com/CCGToOF.jpg" alt="">
+            <p class="pname">Paris</p>
+            <p>Sat29 Nov 2016</p>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, asperiores!</p>
+            <button>Buy Tickets</button>
+        </div>
+        <div class="blackdivimg" id="blackdivimg3">
+            <img src="https://i.imgur.com/8TH2iPE.jpg" alt="">
+            <p class="pname">Sanfransisco</p>
+            <p>Sun37 Nov 2016</p>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, asperiores!</p>
+            <button>Buy Tickets</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div id="contact">
+        <h2>CONTACT</h2>
+        <div id="lastflex" >
+            <div id="cdetail">
+<p>Chicago ,US</p>
+<p>Phone:) 595556565566</p>
+<p>Email:) mail.gmail.com</p>
+            </div>
+            <div id="idetail">
+                <div>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                    <input type="text" id="message" placeholder="Message" style="width: 99%;">
+                    <div style="display: flex;justify-content: flex-end;margin-top: 2%;"><button type="submit" id="btn">Send</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="footimg"></div>
+
+ 
+</footer>
+
+
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>

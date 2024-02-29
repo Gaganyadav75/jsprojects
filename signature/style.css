@@ -19,7 +19,6 @@
     cursor: url(pen.png) 1 26, pointer;
     border: 2px solid var(--primary-color);
     border-radius: 4px;
-    width: 700px;
   }
   .clear-button {
     color: var(--primary-color);
@@ -67,8 +66,3 @@
     }
   }
 
-  @media screen and(max-width:764px) {
-    .signature-pad{
-      width: 300px;
-    }
-  }

@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #000;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    padding: 1rem;
+    background:rgb(215, 199, 199);
+  }
+  .signature-pad-form {
+    min-width: 300px;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .signature-pad-form h2{
+    text-align: center;
+  }
+  .signature-pad {
+    cursor: url(pen.png) 1 26, pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+  }
+  .clear-button {
+    color: var(--primary-color);
+    /* font-size: 1.5vw; */
+    background-color: red;
+    color: white;
+  }
+  .btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  .submit-button {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+
+  .inputdiv{
+    display: flex;
+    justify-content: space-around;
+  }
+  .inputdiv button{
+    width: 35%;
+  }
+
+  .maindiv{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .maindiv > span {
+    width:25%; 
+  }
+  .maindiv input{
+    width: 100%;
+  }
+
+
+
+  @media (pointer: coarse) {
+    body {
+      overflow: hidden; /* Needed to prevent the vertical scroll on touch devices */
+    }
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="signature-pad-form" action="#" method="POST">
+        <h2><b>Signature</b></h2>
+    <div class="maindiv">
+        <span>
+            <span>Color</span>
+            <input type="color" title="color" id="col" value="#000000">
+        </span>
+        <span>
+            <span>BackgroundColor</span>
+            <input type="color" title="Background" id="back" value="#ffffff">
+        </span>
+        <span>
+            <span>Size (px)</span>
+            <input type="number" title="Size" value="5" id="size">
+        </span>
+    </div>
+        <canvas height="300px" width="700px" class="signature-pad"></canvas>
+        <div class="inputdiv">
+            <button class="btn clear-button" type="button">Clear</button>
+            <button class="btn submit-button" type="submit">Download</button>
+        </div>
+    
+      </form>
+
+      <script src="script.js"></script>
+</body>
+</html>

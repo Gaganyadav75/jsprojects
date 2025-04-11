@@ -51,11 +51,7 @@ try {
       
     })
 } catch (error) {
-    try {
-  apifetch("https://api.quotable.io/random");
-    } catch (error) {
-        console.log(error);
-    }
+    console.log(error);
 }
 }
 
